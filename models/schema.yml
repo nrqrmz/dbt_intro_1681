@@ -4,4 +4,4 @@ sources:
   - name: raw_data_circle
     tables:
       - name: raw_cc_stock
-      - name: raw_cc_name
+      - name: raw_cc_sales
