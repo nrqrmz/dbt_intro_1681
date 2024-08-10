@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: circle
+    schema: raw_data_circle
+    description: data for circle sportwear company
+    tables:
+      - name: stock
+        identifier: raw_cc_stock
+        description: details about stock
+        tests:
+          - unique:
+              column_name: "(model || '_' || color || '_' || size)"
+      - name: sales
+        identifier: raw_cc_sales
+        description: details about sales
