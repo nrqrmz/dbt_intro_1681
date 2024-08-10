@@ -1,7 +1,13 @@
 version: 2
 
 sources:
-  - name: raw_data_circle
+  - name: circle
+    schema: raw_data_circle
+    description: data for circle sportwear company
     tables:
-      - name: raw_cc_stock
-      - name: raw_cc_sales
+      - name: stock
+        identifier: raw_cc_stock
+        description: details about stock
+      - name: sales
+        identifier: raw_cc_sales
+        description: details about sales

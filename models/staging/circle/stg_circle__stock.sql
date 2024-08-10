@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('raw_data_circle', 'raw_cc_stock') }}
+    select * from {{ source('circle', 'stock') }}
 
 ),
 
