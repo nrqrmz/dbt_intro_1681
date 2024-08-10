@@ -9,6 +9,7 @@ source as (
 renamed as (
 
     select
+        concat(model, '_', color, '_', size) AS product_id,
         model,
         model_name,
         color,
